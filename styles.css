@@ -1,0 +1,28 @@
+#span{
+    display: block;
+    margin-left: 20px;
+    color: red;
+    font-style: italic;
+}
+#section{
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+}
+#div{
+    width: 100px;
+    margin: 15px auto;
+}
+#label{
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+}
+#input{
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #797979;
+    margin-left: 20px;
+    font-size: 20px;
+    border-radius: 3px;
+}

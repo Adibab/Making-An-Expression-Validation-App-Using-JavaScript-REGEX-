@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <style type=""text/css>
+span{
+    display: block;
+    margin-left: 20px;
+    color: red;
+    font-style: italic;
+}
+section{
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+}
+div{
+    width: 200px;
+    margin: 5px auto;
+}
+label{
+    display: block;
+    padding: 5px;
+    font-size: 10px;
+}
+input{
+    width: 150%;
+    padding: 10px;
+    border: 1px solid #797979;
+    margin-left: 5px;
+    font-size: 10px;
+    border-radius: 3px;
+}
+.password-check::after{
+    content: "";
+}
+.password-check{
+    display: flex;
+    color: darkblue;
+    font-weight: bold;
+    padding: 1px;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <form action="">
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="email"  placeholder="enter your email address" onkeyup="emailCheck(this.value)">   
+       <span></span>
+      </div>
+
+      <div>
+        <label for="number">Phone</label>
+        <input id="number" type="number" placeholder="enter your Phone-number address" onkeyup="phonenumCheck(this.value)">   
+       <span></span>
+      </div>
+
+      <div>
+        <label for="number">PostCode</label>
+        <input id="number" type="text" placeholder="enter your Postcode" onkeyup="postcodeCheck(this.value)">   
+       <span></span>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="text" autocomplete="off" onkeyup="passCheck(this.value)">   
+       <span></span>
+      </div>
+    <div>
+      <p> 
+        <label class="password-check "> 8 characters </label> <br>
+        <label class="password-check "> 1 lower case characters </label><br>
+        <label class="password-check"> 1 upper case characters </label><br>
+        <label class="password-check"> 1 numerical characters </label><br>
+        <label class="password-check"> 1 special characters </label><br>
+    </p>
+</div>
+    </form>
+    </section> 
+</body>
+</html>
